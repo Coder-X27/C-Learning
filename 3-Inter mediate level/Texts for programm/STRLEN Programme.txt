@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{	
+    char *ptr="Karan";
+    int a=strlen(ptr);
+    printf("The length of sting is %d",a);
+    return 0;
+}

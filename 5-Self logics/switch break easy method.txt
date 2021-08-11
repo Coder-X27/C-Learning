@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{	
+    int rating;
+    printf("Enter your rating ");
+    scanf("%d",&rating);
+
+    if(rating<=5)
+    {
+        printf("Your rating is %d",rating);
+    }
+    else
+    {
+        printf("Invalid rating");
+    }
+    return 0;
+}

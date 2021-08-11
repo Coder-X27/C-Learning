@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct employee
+{
+    int code;
+    float salary;
+    char name[20];
+}k;
+
+void show(k emp)
+{
+    printf("The code of the employee is :%d \n",emp.code);
+    printf("The code of the employee is :%f \n",emp.salary);
+    printf("The code of the employee is :%s \n",emp.name);
+    emp.code=34;
+}
+int main()
+{
+    k e1;
+    k *ptr;
+    ptr = &e1;
+
+    ptr->code = 101;
+    ptr->salary = 10.231;
+    strcpy(ptr->name, "Karan");
+
+    show(e1);
+    printf("The code of thge employee is : %d\n",e1.code);
+    
+    return 0;
+}

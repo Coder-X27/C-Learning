@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+
+      int cp,sp;
+      float pro,los;
+      printf("Enter the cost price of the product\n");
+      scanf("%d",&cp);
+      printf("The price at which you sold the product\n");
+      scanf("%d",&sp);
+      if(sp>cp){
+            pro=sp-cp;
+            printf("The profit is %.2f\n",pro);
+            pro=(float)(pro*100)/cp;
+            printf("The profit percentage is %.2f%%\n",pro);
+      }
+      else if(cp>sp){
+            los=cp-sp;
+            printf("The loss is %.2f\n",los);
+            los=(float)(los*100)/cp;
+            printf("The loss percentage is %.2f%%\n",los);
+      }
+      else{
+            printf("There is no profit");
+      }
+      return 0;
+}

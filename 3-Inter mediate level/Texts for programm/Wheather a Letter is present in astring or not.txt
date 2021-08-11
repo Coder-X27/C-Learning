@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    char str[10], n;
+    int i, f = 0;
+    printf("\nEnter string ");
+    gets(str);
+    printf("Enter the character which you wanted to search\n");
+    scanf("%c", &n);
+
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        if (str[i] == n)
+        {
+            f = 1;
+            break;
+        }
+    }
+    if (f == 1)
+        printf("Character is present in string");
+    else
+        printf("Character is not present in string");
+    return 0;
+}

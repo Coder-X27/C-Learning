@@ -1,0 +1,28 @@
+#include <stdio.h>
+void printtable(int *many, int table, int n)
+{
+    printf("The multiplication table of %d is :\n",table);
+    for(int i=0;i<n;i++)
+    {
+        many[i]=table*(i+1); /*Product of given number and multiples of that*/
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        printf("%d x %d = %d \n",table,i+1,many[i]);
+    }
+    printf("**********************************************************************\n");
+}
+int main()
+{	
+    int mul[8][10];
+    int a;
+    for(int i=0;i<8;i++)
+    {
+        printf("Enter the tables you want \n");
+        scanf("%d",&a);
+        printtable(mul[i],a,10);
+    }
+    
+    return 0;
+}

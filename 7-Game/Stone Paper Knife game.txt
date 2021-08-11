@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int stonepaperknife(char you, char comp)
+{
+    if (you == comp)
+    {
+        return 0;
+    }
+    if (you == 's' && comp == 'k')
+    {
+        return 1;
+    }
+    else if (you == 'k' && comp == 's')
+    {
+        return -1;
+    }
+    if (you == 's' && comp == 'p')
+    {
+        return -1;
+    }
+    else if (you == 'p' && comp == 's')
+    {
+        return 1;
+    }
+    if (you == 'p' && comp == 'k')
+    {
+        return -1;
+    }
+    else if (you == 'k' && comp == 'p')
+    {
+        return 1;
+    }
+}
+
+int main()
+{
+
+    srand(time(0));
+    int number = rand() % 100 + 1;
+    char you, comp;
+    if (number < 33)
+    {
+        comp = 's';
+    }
+    else if (number > 33 && number < 66)
+    {
+        comp = 'p';
+    }
+    else
+    {
+        comp = 'k';
+    }
+    printf("Enter 's' For Stone 'p' paper and 'k' for knife.\n");
+    scanf("%c", &you);
+    int result = stonepaperknife(you, comp);
+
+    printf("Computer has chosen %c and you choose %c\n",comp,you);
+
+    if(result==0)
+    {
+        printf("Match is draw !\n ");
+    }
+    
+    else if(result==1)
+    {
+        printf("You won the match !\n ");
+    }
+
+    else
+    {
+        printf("You lose the match !\n ");
+    }
+
+    return 0;
+}

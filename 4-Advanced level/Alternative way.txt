@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+struct employee 
+{
+    int code;
+    float salary;
+    char name[10];
+};
+int main()
+{	
+    struct employee karan={100,34.23,"Karan"};
+
+    printf("Code is : %d \n",karan.code);
+    printf("salary is : %f \n",karan.salary);
+    printf("name is : %s \n",karan.name);
+
+    return 0;
+}

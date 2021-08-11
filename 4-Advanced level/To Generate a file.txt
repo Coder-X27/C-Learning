@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    FILE *k;
+    int number =45;
+    k=fopen("Generate.txt","w");
+    fprintf(k,"My name is karan sharma",number);
+    fclose(k);
+    return 0;
+}

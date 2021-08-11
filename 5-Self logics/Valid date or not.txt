@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+      int date,month,year;
+      printf("Enter the date:-> ");
+      scanf("%d",&date);
+      printf("Enter the month:-> ");
+      scanf("%d",&month);
+      printf("Enter the year:-> ");
+      scanf("%d",&year);
+      if(date<=31 && month<=12 && year>0){
+         printf("The date %d/%d/%d is correct",date,month,year);
+      }
+      else{
+            printf("Invalid date");
+      }
+      return 0;
+}

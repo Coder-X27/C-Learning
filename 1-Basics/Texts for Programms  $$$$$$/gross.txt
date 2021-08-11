@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+  float BP, DA, PF, HR, GS;
+  printf("Enter basic pay \n");
+  scanf("%f", &BP);
+
+  HR = 0.2 * BP;
+  DA = 0.4 * BP;
+  PF = 0.12 * BP;
+  GS = BP + DA + HR + PF;
+  printf("basic pay=%.2f\n", BP);
+
+  printf("Dearness allowance=%.2f\n", DA);
+
+  printf("House rent allownace = %.2f\n", HR);
+
+  printf("Provident fund =%.2f\n", PF);
+
+  printf("Gross salary=%.2f\n", GS);
+
+  return 0;
+}

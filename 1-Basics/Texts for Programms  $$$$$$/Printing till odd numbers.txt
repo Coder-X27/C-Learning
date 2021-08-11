@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("Enter a number ");
+    scanf("%d", &n);
+    for (int a=0; a <= n; a++)
+    {
+
+        if (a % 2 == 1)
+        {
+            printf("%d\n",a);
+        }
+        else
+        {
+            continue;
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+      int s1,s2,s3,sum;
+      printf("Enter the sides of the triangle \n");
+      scanf("%d%d%d",&s1,&s2,&s3);
+      if(s1==s2&&s3==s2&&s1==s3){
+            printf("It is an Equilateral Triangle");
+      }
+      else if(s1==s2||s1==s3||s2==s3){
+            printf("It is a isoselse Triangle");
+      }
+      else{
+            printf("It is a Scalene Triangle");
+      }
+      return 0;
+}

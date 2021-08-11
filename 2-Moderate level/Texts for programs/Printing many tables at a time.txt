@@ -1,0 +1,21 @@
+#include<stdio.h>
+void printtable(int *table,int num){
+    printf("The multiplication table of %d is :\n",num);
+    for(int i=0;i<10;i++){
+        table[i]=num*(i+1);
+    }
+    for(int i=0;i<10;i++){
+        printf("%d x %d = %d\n",num,i+1,table[i]);
+    }
+    printf("******************************************************\n\n");
+}
+int main(){
+    int table[3][10];
+    int t1,t2,t3;
+    printf("Enter the 3 tables you wanted to print\n");
+    scanf("%d%d%d",&t1,&t2,&t3);
+    printtable(table[0],t1);
+    printtable(table[1],t2);
+    printtable(table[2],t3);
+    return 0;
+}

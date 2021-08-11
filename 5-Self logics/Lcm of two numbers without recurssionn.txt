@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+      int a,b,low,lcm;
+      printf("Enter the two numbers\n");
+      scanf("%d%d",&a,&b);
+      // low=(a<b)?a:b;//It is a one line notation for the if and else .
+      if(a<b){
+            low=a;
+      }
+      else{
+            low=b;
+      }
+      while(1){
+            if(low%a==0&&low%b==0){
+                  lcm=low;
+                  break;
+            }
+            low++;
+      }
+      printf("The lcm of the two numbers %d and %d is %d",a,b,lcm);
+      return 0;
+}
